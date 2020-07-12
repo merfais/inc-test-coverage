@@ -1,0 +1,42 @@
+{
+  "name": "inc-test-coverage",
+  "version": "1.0.0",
+  "description": "计算分支间增量测试覆盖率",
+  "main": "index.js",
+  "scripts": {
+    "dev": "rollup -c -w",
+    "build": "rollup -c",
+    "lint": "cross-env NODE_ENV=production eslint -c ./.eslintrc.js --max-warnings=0 --no-error-on-unmatched-pattern ./",
+    "lint:fix": "cross-env NODE_ENV=production eslint -c ./.eslintrc.js --fix --max-warnings=0 --no-error-on-unmatched-pattern ./",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/merfais/inc-test-coverage.git"
+  },
+  "keywords": [
+    "test",
+    "coverage",
+    "jest",
+    "increase",
+    "lcov",
+    "lcov.info"
+  ],
+  "author": "coffeebi",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/merfais/inc-test-coverage/issues"
+  },
+  "homepage": "https://github.com/merfais/inc-test-coverage#readme",
+  "devDependencies": {
+    "@babel/core": "^7.10.4",
+    "@babel/preset-env": "^7.10.4",
+    "@rollup/plugin-babel": "^5.0.4",
+    "@rollup/plugin-commonjs": "^13.0.0",
+    "@rollup/plugin-node-resolve": "^8.1.0",
+    "babel-eslint": "^10.1.0",
+    "cross-env": "^7.0.2",
+    "eslint": "^7.4.0",
+    "rollup": "^2.21.0"
+  }
+}
